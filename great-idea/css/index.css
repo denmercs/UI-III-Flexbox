@@ -441,4 +441,10 @@ ul li {
 		width: auto;
 	}	
 	
+	.service-img {
+		width: auto;
+		height: 200px;
+		padding: 0 2rem;
+	}
+	
 }
