@@ -64,3 +64,381 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+/** Header **/
+header {
+	display: flex;
+	justify-content: center;
+	height: 5rem;
+	padding-top: 1rem;
+}
+	header nav {
+		padding-top: .8rem;
+	}
+	nav > a {
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: grey;
+		padding: 2rem 5rem;
+	}
+
+	nav > a:hover {
+		color: white;
+		background-color: grey;
+		transition: all ease-in .8s;
+	}
+
+	.logo {
+		background-image: url('../img/logo.png');
+		width: 183px;
+		height: 35px;
+		padding: 0 2rem;
+	}
+
+.hero {
+	display: flex;
+	justify-content: space-evenly;
+	height: 30rem;
+	width: 100%;
+	margin: 5rem 0;
+}
+	.hero-text {
+		margin-top: 5rem;
+	}
+
+	.hero-text h3 {
+		font-size: 5rem;
+	}
+
+	.hero-text button {
+		font-size: 1.5rem;
+		padding: 2rem 4rem;
+		margin-top: 2rem;
+	}
+
+	.hero-text button:hover {
+		color: white;
+		background-color: grey;
+		transition: all ease-in .8s;
+	}
+
+	.hero-img {
+		background-image: url('../img/header-img.png');
+		height: 379px;
+		width: 379px;
+	}
+
+/** index middle content **/
+.middle-img {
+	background-image: url('../img/mid-page-accent.jpg');
+	height: 300px;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+/** flex box columns **/
+.flex {
+	display: flex;
+}
+
+	.flex h3 {
+		font-size: 2.5rem;
+		padding: 1rem 0;
+	}
+
+	.flex p {
+		font-size: 1.5rem;
+		font-family: 'Roboto', sans-serif;
+		padding: 1rem .5rem;
+		line-height: 2;
+	}
+
+hr {
+	border: 0;
+    height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	margin: 2rem;
+}
+
+/** Contact / Footer **/
+.contact {
+	height: 100%;
+	padding: 2rem;
+	margin: 2rem 0;
+}
+
+	.contact h3 {
+		font-size: 2.5rem;
+		padding: 1rem 0;
+	}
+
+	.contact address {
+		font-size: 1.5rem;
+		line-height: 2;
+	}
+
+footer {
+	height: 15rem;
+	text-align: center;
+	padding-top: 8rem;
+}
+
+	footer p {
+		font-size: 1.25rem;
+	}
+
+/** SERVICE **/
+.service-hero {
+	background-image: url('../img/services-header.jpg');
+	width: 100%;
+	height: 200px;
+	margin-top: .7rem;
+}
+
+.service-text {
+	margin: 3rem 0;
+}
+
+	.service-text h3 {
+		font-size: 2.5rem;
+	}
+
+	.service-text p {
+		font-size: 1.5rem;
+		font-family: 'Roboto', sans-serif;
+		line-height: 1.5;
+	}
+
+.box {
+	display: flex;
+	justify-content: center;
+
+}
+
+.box-item {
+	border: grey 2px solid;
+	background-color: rgba(179, 248, 225, 0.158);
+	margin: 2rem 2rem;
+	padding: 2rem;
+}
+
+.box-item-facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+	.box-item h3 {
+		font-size: 2rem;
+	}
+
+	.box-item p {
+		font-size: 1.25rem;
+		line-height: 2;
+	}
+
+	.box-item button {
+		font-size: 1.25rem;
+		padding: 1rem 3rem;
+		margin-top: 2rem;
+	}
+
+	.box-item button:hover {
+		color: white;
+		background-color: grey;
+		transition: all ease-in .5s;
+	}
+
+.box-item-two {
+	width: auto;
+}	
+
+.box-product {
+	display: flex;
+	
+}
+
+.box-item-product {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 0, 255, 0.103);
+}
+	.box-item-product button {
+		padding: 1.5rem 5rem;
+	}
+
+	.box-item-product-one {
+		flex-grow: 1;
+	}
+	.box-item-product-two {
+		flex-grow: 2;
+	}
+	.box-item-product-three {
+		flex-grow: 1;
+	}
+
+	.box-item-product-text {
+		font-size: 1.5rem;
+		line-height: 2;
+		margin: 2rem;
+		font-family: 'Roboto', sans-serif;
+	}
+ul li {
+	list-style-type: circle;
+}
+
+
+.service-facts {
+	margin: 2rem;
+}
+
+	.service-facts h3 {
+		font-size: 2rem;
+	}
+
+	.service-facts p, .service-facts li {
+		line-height: 2;
+		font-size: 1.5rem;
+	}
+
+
+
+.service-img {
+	background-image: url('../img/services-info.png');
+	width: auto;
+	height: 500px;
+	padding: 0 2rem;
+}
+
+
+
+
+/** Product Page **/
+.pricing-text {
+	text-align: center;
+	font-size: 3rem;
+}
+
+/** media queries **/
+@media only screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+		align-items: center;
+	}
+
+	nav {
+		order: 2;
+	}
+	nav > a {
+		font-size: 1.5rem;
+		display: flex;
+		padding: .5rem 5rem;
+	}
+
+	nav > a:hover {
+		transition: all ease-in .8s;
+		font-size: 1.5rem;
+	}
+
+
+	.hero {
+		flex-direction: column;
+	}
+		.hero-text {
+			margin-top: 2rem;
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.hero-text h3 {
+			font-size: 3rem;
+			text-align: center;
+		}
+	
+		.hero-text button {
+			font-size: 1.5rem;
+			padding: 1rem 1rem;
+			margin-top: 2rem;
+			border: grey 1px solid;
+		}
+	
+		.hero-text button:hover {
+			color: white;
+			background-color: grey;
+			transition: all ease-in .8s;
+		}
+	
+		.hero-img {
+			display: none;
+		}
+	
+	.flex {
+		flex-direction: column;
+	}
+
+	.contact {
+		text-align: center;
+	}
+
+	/** SERVICES **/
+	.service-text {
+		margin: 1.5rem 0;
+	}
+	
+		.service-text h3 {
+			font-size: 1.5rem;
+		}
+	
+		.service-text p {
+			font-size: .8rem;
+			font-family: 'Roboto', sans-serif;
+			line-height: 1.5;
+		}
+	.box {
+		flex-direction: column;
+	}
+	
+	.box-item {
+		border: grey 2px solid;
+		background-color: rgba(179, 248, 225, 0.158);
+		margin: 1rem 1rem;
+		padding: 1rem;
+	}
+	
+	.box-item-facts {
+		justify-content: space-between;
+	}
+	
+		.box-item h3 {
+			font-size: 1.5rem;
+		}
+	
+		.box-item p {
+			font-size: 1rem;
+			line-height: 2;
+		}
+	
+		.box-item button {
+			font-size: 1.25rem;
+			padding: 1rem 3rem;
+			margin-top: 2rem;
+		}
+	
+		.box-item button:hover {
+			color: white;
+			background-color: grey;
+			transition: all ease-in .5s;
+		}
+	
+	.box-item-two {
+		width: auto;
+	}	
+	
+}
